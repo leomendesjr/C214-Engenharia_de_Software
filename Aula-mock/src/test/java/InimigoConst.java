@@ -9,3 +9,6 @@ public class InimigoConst {
                     "\"qtdVida\": 20, \n " +
                     "\"arma\": \"Teia\" }";
 }
+
+
+
