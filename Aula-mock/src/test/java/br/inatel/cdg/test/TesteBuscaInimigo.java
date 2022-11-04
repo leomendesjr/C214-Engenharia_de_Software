@@ -1,3 +1,6 @@
+package test;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -11,9 +14,9 @@ public class TesteBuscaInimigo {
 
         Inimigo skeleton = buscaInimigo.buscaInimigo(10);
 
-        assertEquals("Skeleton", skeleton.getNome());
-        assertEquals(200.0, skeleton.getQtdVida(), 0.1);
-        assertEquals("Espada do Skeleton", skeleton.getArma());
+        Assert.assertEquals("Skeleton", skeleton.getNome());
+        Assert.assertEquals(200.0, skeleton.getQtdVida(), 0.1);
+        Assert.assertEquals("Espada do Skeleton", skeleton.getArma());
     }
 
     @Test
@@ -23,8 +26,8 @@ public class TesteBuscaInimigo {
 
         Inimigo skeleton = buscaInimigo.buscaInimigo(99);
 
-        assertEquals("Aranha", skeleton.getNome());
-        assertEquals(20, skeleton.getQtdVida(), 0.1);
-        assertEquals("Teia", skeleton.getArma());
+        Assert.assertEquals("Aranha", skeleton.getNome());
+        Assert.assertEquals(20, skeleton.getQtdVida(), 0.1);
+        Assert.assertEquals("Teia", skeleton.getArma());
     }
 }

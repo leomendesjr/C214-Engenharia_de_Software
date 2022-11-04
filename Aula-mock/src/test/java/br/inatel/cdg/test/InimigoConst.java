@@ -1,3 +1,5 @@
+package test;
+
 public class InimigoConst {
     public static String SKELETON =
             "{ \"nome\": \"Skeleton\", \n " +
